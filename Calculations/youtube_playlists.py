@@ -1,8 +1,8 @@
 import re
 from datetime import timedelta
 from googleapiclient.discovery import build
+from youtube_playlists_hp import API_KEY
 
-API_KEY = ''
 youtube = build('youtube', 'v3', developerKey=API_KEY)
 hours_pattern = re.compile(r'(\d+)H')
 minutes_pattern = re.compile(r'(\d+)M')
